@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@import "../../node_modules/bulma/bulma.sass";
+
+.logos {
+  text-align: center;
+
+  img {
+    filter: grayscale(100%);
+    max-width: 250px;
+    height: 60px;
+    width: auto;
+  }
+
+  a:hover img {
+    filter: none;
+  }
+}
+
+.hero {
+  background-color: $primary-light !important;
+  background-image: url("https://media.pitchfork.com/photos/592c54aad7a71d1ea569bec7/16:9/w_1280,c_limit/1bc03395.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  background-blend-mode:luminosity;
+
+  .title {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  .title.is-primary {
+    color: $primary !important;
+  }
+}
